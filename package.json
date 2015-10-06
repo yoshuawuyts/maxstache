@@ -1,6 +1,6 @@
 {
   "name": "maxstache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimalist mustache template replacement",
   "main": "index.js",
   "scripts": {
