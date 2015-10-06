@@ -42,6 +42,15 @@ want to escape values, it's easy to pass the string result through an escape
 function or escape the variable values before passing them into this function.
 Hurray for composition!
 
+### 25 lines is too much, make it shorter!
+Sure thing:
+```js
+module.exports = function maxstache (str, ctx) {
+  return str.split(/\{\{|\}\}/).map((t, i) => !(i % 2) t : ctx[t]).join('')
+}
+```
+:rotating_light: code golf!
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 
