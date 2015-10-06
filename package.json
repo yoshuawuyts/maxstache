@@ -11,11 +11,15 @@
     "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
   },
   "repository": "yoshuawuyts/maxstache",
-  "keywords": ["mustache","template","minstache"],
+  "keywords": [
+    "mustache",
+    "template",
+    "minstache"
+  ],
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "standard": "^5.3.1"
   },
   "files": [
     "index.js",
