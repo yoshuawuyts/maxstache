@@ -49,8 +49,10 @@ module.exports = function maxstache (str, ctx) {
   return str.split(/\{\{|\}\}/).map((t, i) => !(i % 2) ? t : ctx[t]).join('')
 }
 ```
-:rotating_light: CODE GOLF :rotating_light: Shout out to @divinegod and
-@someoneweird for tinkering along on this.
+:rotating_light: CODE GOLF :rotating_light: Shout out to
+[@divinegod](https://github.com/divinegod) and
+[@someoneweird](https://github.com/SomeoneWeird) for thinking of ways to do
+this in less lines (hint: I don't think it can).
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
