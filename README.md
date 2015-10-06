@@ -53,6 +53,9 @@ Shout out to [@divinegod](https://github.com/divinegod) and
 [@someoneweird](https://github.com/SomeoneWeird) for thinking of ways to do
 this in less lines.
 
+## See Also
+- [maxstache-stream][1]
+
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 
@@ -66,3 +69,5 @@ this in less lines.
 [downloads-url]: https://npmjs.org/package/maxstache
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: https://github.com/feross/standard
+
+[1]: https://github.com/yoshuawuyts/maxstache-stream
