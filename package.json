@@ -1,0 +1,24 @@
+{
+  "name": "maxstache",
+  "version": "1.0.0",
+  "description": "Minimalist mustache template replacement",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "deps:pkg": "ncu",
+    "deps:update": "ncu -a",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/maxstache",
+  "keywords": ["mustache","template","minstache"],
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ]
+}
