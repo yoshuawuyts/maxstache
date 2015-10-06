@@ -51,7 +51,7 @@ module.exports = function maxstache (str, ctx) {
 ```
 Shout out to [@divinegod](https://github.com/divinegod) and
 [@someoneweird](https://github.com/SomeoneWeird) for thinking of ways to do
-this in less lines (note: I don't think it can).
+this in less lines.
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
