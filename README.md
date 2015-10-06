@@ -43,16 +43,15 @@ function or escape the variable values before passing them into this function.
 Hurray for composition!
 
 ### 25 lines is too much, make it shorter!
-Sure thing:
+:rotating_light: CODE GOLF INITIATED :rotating_light:
 ```js
 module.exports = function maxstache (str, ctx) {
   return str.split(/\{\{|\}\}/).map((t, i) => !(i % 2) ? t : ctx[t]).join('')
 }
 ```
-:rotating_light: CODE GOLF :rotating_light: Shout out to
-[@divinegod](https://github.com/divinegod) and
+Shout out to [@divinegod](https://github.com/divinegod) and
 [@someoneweird](https://github.com/SomeoneWeird) for thinking of ways to do
-this in less lines (hint: I don't think it can).
+this in less lines (note: I don't think it can).
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
