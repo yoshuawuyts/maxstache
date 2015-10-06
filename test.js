@@ -26,3 +26,13 @@ test('should work even if the string starts with a var', function (t) {
 
   t.equal(res, 'Yoda, my name is')
 })
+
+test('should work even if two vars are next to each other', function (t) {
+  t.plan(1)
+
+  const str = '{{first}}{{second}}, my name is'
+  const ctx = { first: 'Foo', second: 'bar' }
+  const res = maxstache(str, ctx)
+
+  t.equal(res, 'Foobar, my name is')
+})
