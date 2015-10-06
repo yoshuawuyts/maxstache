@@ -46,10 +46,11 @@ Hurray for composition!
 Sure thing:
 ```js
 module.exports = function maxstache (str, ctx) {
-  return str.split(/\{\{|\}\}/).map((t, i) => !(i % 2) t : ctx[t]).join('')
+  return str.split(/\{\{|\}\}/).map((t, i) => !(i % 2) ? t : ctx[t]).join('')
 }
 ```
-:rotating_light: code golf!
+:rotating_light: CODE GOLF :rotating_light: Shout out to @divinegod and
+@someoneweird for tinkering along on this.
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
