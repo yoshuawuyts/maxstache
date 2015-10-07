@@ -1,4 +1,4 @@
-# maxstache
+# maxstache [![stability][0]][1]
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
@@ -54,11 +54,13 @@ Shout out to [@divinegod](https://github.com/divinegod) and
 this in less lines.
 
 ## See Also
-- [maxstache-stream][1]
+- [maxstache-stream][2]
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)
 
+[0]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
+[1]: https://nodejs.org/api/documentation.html#documentation_stability_index
 [npm-image]: https://img.shields.io/npm/v/maxstache.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/maxstache
 [travis-image]: https://img.shields.io/travis/yoshuawuyts/maxstache/master.svg?style=flat-square
@@ -70,4 +72,4 @@ this in less lines.
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: https://github.com/feross/standard
 
-[1]: https://github.com/yoshuawuyts/maxstache-stream
+[2]: https://github.com/yoshuawuyts/maxstache-stream
