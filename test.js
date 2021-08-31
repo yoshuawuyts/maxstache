@@ -27,6 +27,22 @@ test('should work even if the string starts with a var', function (t) {
   t.equal(res, 'Yoda, my name is')
 })
 
+test('should not modify incomplete curly bracket tags', function (t) {
+  t.plan(2)
+
+  const str = 'This gets changed: {{name}}, and }} after this gets preserved'
+  const ctx = { name: 'Yoda' }
+  const res = maxstache(str, ctx)
+
+  t.equal(res, 'This gets changed: Yoda, and }} after this gets preserved')
+
+  const str2 = 'These brackets are preserved {{bad_tag but {{name}} gets changed'
+  const ctx2 = { name: 'Yoda' }
+  const res2 = maxstache(str2, ctx2)
+
+  t.equal(res2, 'These brackets are preserved {{bad_tag but Yoda gets changed')
+})
+
 test('should work even if two vars are next to each other', function (t) {
   t.plan(1)
 
