@@ -10,7 +10,7 @@ function maxstache (str, ctx) {
   assert.equal(typeof str, 'string')
   assert.equal(typeof ctx, 'object')
 
-  const tokens = str.split(/\{\{|\}\}/)
+  const tokens = str.split(/\{\{([^{}]+?)\}\}/)
   const res = tokens.map(parse(ctx))
   return res.join('')
 }
